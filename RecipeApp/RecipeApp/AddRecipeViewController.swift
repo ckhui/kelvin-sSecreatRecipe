@@ -10,6 +10,8 @@ import UIKit
 
 protocol NewRecipeProtocol {
     func getInfoOfNewRecipe(recipe : Recipe)
+    // i would name my protocol function to
+    // func recipeCreated(recipe: Recipe)
 }
 
 class AddRecipeViewController: UIViewController {
@@ -82,6 +84,7 @@ class AddRecipeViewController: UIViewController {
         button.addTarget(self, action: #selector(handleConfirmAdd), for: .touchUpInside)
         return button
     }()
+    
     
     let categories = ["Vegetarian", "Fast Food", "Healthy", "No-Cook", "Make Ahead"]
     var navigationBarHeight: CGFloat = 0

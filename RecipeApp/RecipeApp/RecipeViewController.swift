@@ -43,11 +43,15 @@ class RecipeViewController: UIViewController, NewRecipeProtocol {
     }()
     
     
+    // you forgot your XML Parser
     let categories = ["All", "Vegetarian", "Fast Food", "Healthy", "No-Cook", "Make Ahead"]
+    
+    
     var arrayOfRecipe = [Recipe]()
     var filterArrayOfRecipe = [Recipe]()
     var selectedRow : Int?
-    var categoriesChosed = "All"
+    var categoriesChosed = "All" // just pass the object at categories
+    // var selectedCategory = categories[0] // in this case it will be "All"
     var navigationBarHeight: CGFloat = 0
 
     
@@ -136,26 +140,47 @@ extension RecipeViewController: UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let category = categories[row]
         
+        // if you are using Swift, use switch instead of if else
         if category == "All" {
             filterArrayOfRecipe = []
             categoriesChosed = category
         } else {
-            filterArrayOfRecipe = []
-            filterArrayOfRecipe = arrayOfRecipe.filter{$0.type == category}
+            filterArrayOfRecipe = [] // there is no need to empty this array
+            filterArrayOfRecipe = arrayOfRecipe.filter{$0.type == category} // assigning a new value will replace the previous value
             categoriesChosed = category
         }
         
+        // basically your if else method is actually redundant
+        // here is how i prefer to solve it
+        if category == "All" {
+            filterArrayOfRecipe = arrayOfRecipe
+        } else {
+            filterArrayOfRecipe = arrayOfRecipe.filter{$0.type == category}
+        }
+        categoriesChosed = category
+        // above can also be moved to a function
+        // check below
+        
         recipeTableView.reloadData()
     }
+    
+    
 }
 
-
+extension RecipeViewController {
+    func recipes(type: String = "All") -> [Recipe] {
+        if type != "All" {
+            return arrayOfRecipe.filter{ $0.type == type }
+        }
+        return arrayOfRecipe
+    }
+}
 
 
 extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        
+        // if you follow my changes you can just use filterArrayOfRecipe instead and there is no need to call if-else statement
         if filterArrayOfRecipe.count == 0 && (categoriesChosed == "All" || sortLabel.text == "SORT BY") {
             return arrayOfRecipe.count
         } else {
@@ -168,6 +193,8 @@ extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
         
         let food : Recipe
         
+        
+        // if you follow my changes you can just use filterArrayOfRecipe instead and there is no need to call if-else statement
         if filterArrayOfRecipe.count == 0 {
             food = arrayOfRecipe[indexPath.row]
         } else {
@@ -189,6 +216,7 @@ extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
     func moveToRecipeDetailViewController() {
         let nextController = RecipeDetailViewController()
         
+        // if you follow my changes you can just use filterArrayOfRecipe instead and there is no need to call if-else statement
         if filterArrayOfRecipe.count == 0 {
             nextController.food = arrayOfRecipe[self.selectedRow!]
         } else {
@@ -200,11 +228,16 @@ extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+        return true  
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
+        
+        // whenever you implement this delegate, make sure that you check editingStyle
+        // because this delegate might get called if there is insertion too
+        
+        // if you follow my changes you can just use filterArrayOfRecipe instead and there is no need to call if-else statement
         if filterArrayOfRecipe.count == 0 {
             arrayOfRecipe.remove(at: indexPath.row)
         } else {
@@ -212,12 +245,10 @@ extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {
             arrayOfRecipe = arrayOfRecipe.filter{ $0.name != objectToDelete.name }
             filterArrayOfRecipe.remove(at: indexPath.row)
         }
+        
         recipeTableView.reloadData()
     }
 
 
-    
-    
-    
     
 }
