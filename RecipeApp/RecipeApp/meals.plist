@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>Vegetarian</string>
+		<key>name</key>
+		<string>Veggie Pizza</string>
+		<key>desc</key>
+		<string>Nothing beats a homemade pizza.</string>
+		<key>image</key>
+		<string>veggiePizza</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Vegetarian</string>
+		<key>name</key>
+		<string>Spinach Enchiladas</string>
+		<key>desc</key>
+		<string>If you like spinach and Mexican food, you&apos;ll love these easy vegetarian enchiladas made with ricotta cheese and spinach.</string>
+		<key>image</key>
+		<string>spinachEnchiladas</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Vegetarian</string>
+		<key>name</key>
+		<string>Spinach Lasagna</string>
+		<key>desc</key>
+		<string>So yummy! You can also substitute ground turkey or another veggie for the spinach.</string>
+		<key>image</key>
+		<string>spinachLasagna</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Fast Food</string>
+		<key>name</key>
+		<string>Nuggets</string>
+		<key>desc</key>
+		<string>These golden nuggets are crusted with almonds, one of the best nuts for a lower BMI. In fact, a 2003 study demonstrated that munching on these nuts gave dieters left dieters more satisfied and less likely to overeat, thus increasing weight loss.</string>
+		<key>image</key>
+		<string>nuggets</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Fast Food</string>
+		<key>name</key>
+		<string>French Fries</string>
+		<key>desc</key>
+		<string>One serving of these potato wedges contains 61% of your daily vitamin C quota, a vitamin that keeps more than the occasional sniffles away. In fact, C has also been shown to elevate mood and counteract the stress hormones that leave you feeling tense and trigger the storage of belly fat.</string>
+		<key>image</key>
+		<string>frenchFries</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Fast Food</string>
+		<key>name</key>
+		<string>Egg Mcmuffin</string>
+		<key>desc</key>
+		<string>Save 60 calories and 237 milligrams of sodium when you spend 10 minutes in your kitchen making this sandwich instead of 10 minutes in the drive-through line. Plus, this recipe got 8 grams of belly-slimming fiber, keeping you fuller longer.</string>
+		<key>image</key>
+		<string>eggMcmuffin</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Healthy</string>
+		<key>name</key>
+		<string>Chicken Shish Kebab</string>
+		<key>desc</key>
+		<string>This is a nice change from the ordinary grilled chicken. This is excellent served with pita bread, a garlicky tzatziki, and a Greek salad. Lamb can be substituted for the chicken, and many variations on vegetables can be used.</string>
+		<key>image</key>
+		<string>shishKebab</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Healthy</string>
+		<key>name</key>
+		<string>Cauliflower Pizza Crust</string>
+		<key>desc</key>
+		<string>You will never guess this rich, grain-free pizza crust is made with cauliflower instead of flour. Serve with your favorite sauce and toppings.</string>
+		<key>image</key>
+		<string>pizzaCrust</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Healthy</string>
+		<key>name</key>
+		<string>Maple Salmon</string>
+		<key>desc</key>
+		<string>This is the best and most delicious salmon recipe, and very easy to prepare. I love maple in everything and put this together one night. My husband totally loved it; he did not like salmon that much until he had this.</string>
+		<key>image</key>
+		<string>mapleSalmon</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>No-cook</string>
+		<key>name</key>
+		<string>Carrot Avocado Tabbouleh</string>
+		<key>desc</key>
+		<string>Salty, roasted sunflower kernals give this lively side dish crunch. Diced avocado brings a dash of creaminess to the table.</string>
+		<key>image</key>
+		<string>carrotAvocado</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>No-cook</string>
+		<key>name</key>
+		<string>Texas Caviar Rice and Beans</string>
+		<key>desc</key>
+		<string>Turn a Lone Star State appetizer into a simple weeknight main dish. Customize with any topping, such as guacamole, salsa, or a dollop of sour cream.</string>
+		<key>image</key>
+		<string>riceAndBeans</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>No-cook</string>
+		<key>name</key>
+		<string>Whipped-Cream Corn Salad</string>
+		<key>desc</key>
+		<string>To make ahead, prepare recipe as directed through Step 1. Cover and chill up to 24 hours. Let stand at room temperature 30 minutes, and proceed with recipe.</string>
+		<key>image</key>
+		<string>cornSalad</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Make Ahead</string>
+		<key>name</key>
+		<string>family casserole</string>
+		<key>desc</key>
+		<string>This recipe has been handed down in my family.The tradition is to add an ingredient as it is handed. I have added the canned mushrooms. This freezes wonderfully. Just mix, freeze, and when ready to serve, remove and bake. Lovely</string>
+		<key>image</key>
+		<string>familyCasserole</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Make Ahead</string>
+		<key>name</key>
+		<string>Lunch Wraps</string>
+		<key>desc</key>
+		<string>These are a delicious make-ahead lunch to freeze as a handy lunch to bring to work! Just make, freeze, and then heat in the microwave for a very balanced meal.</string>
+		<key>image</key>
+		<string>lunchWrap</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Make Ahead</string>
+		<key>name</key>
+		<string>Ratatouille</string>
+		<key>desc</key>
+		<string>This terrific dish is loaded with succulent Mediterranean vegetables.</string>
+		<key>image</key>
+		<string>Ratatouille</string>
+	</dict>
+</array>
+</plist>
