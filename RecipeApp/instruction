@@ -1,0 +1,8 @@
+Create a Recipe App with the following criteria: -
+
+
+Create/Update/Delete a Recipe (ingredients and steps)
+A page to list recipes (filterable by recipe types)
+A detailed recipe page
+Given an xml file with recipe types data (recipetypes.xml), use that to populate the recipe types into a Spinner/Picker control. 
+Make your own sample recipes data complying with recipetypes.xml 
