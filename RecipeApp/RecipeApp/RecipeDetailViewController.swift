@@ -76,6 +76,9 @@ class RecipeDetailViewController: UIViewController {
     
     
     func handleBack() {
+        
+        // try not to let viewController dismiss itself
+        // use delegate instead
         dismiss(animated: true, completion: nil)
     }
     
